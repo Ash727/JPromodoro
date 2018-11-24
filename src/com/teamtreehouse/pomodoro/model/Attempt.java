@@ -27,4 +27,21 @@ public class Attempt {
     public void setmMessage(String mMessage) {
         this.mMessage = mMessage;
     }
+
+    public void tick() {
+     this.mRemainingSeconds--;
+    }
+
+    public void save() {
+        System.out.printf("Saving:%s %n",this);
+    }
+
+    @Override
+    public String toString() {
+        return "Attempt{" +
+                "mMessage='" + mMessage + '\'' +
+                ", mRemainingSeconds=" + mRemainingSeconds +
+                ", mkind=" + mkind +
+                '}';
+    }
 }
