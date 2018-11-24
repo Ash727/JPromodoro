@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         // Load the font
@@ -17,6 +19,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.setResizable(false);
         primaryStage.show();
+        
     }
 
     public static void main(String[] args) {
